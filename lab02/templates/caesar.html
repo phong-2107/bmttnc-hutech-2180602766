@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAESAR</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js" integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <table class="table">
+            <tr>
+                <td style="text-align: center; font-weight: bold; font-size: 25px; ">CAESAR CIPHER</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold; color:blue">ENCRYPTION</td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="/encrypt" method="post">
+                        <div class="mb-3">
+                            <label  class="form-label">
+                                plaintext
+                            </label>
+                            <input type="text" class="form-control" name="inputPlainText" placeholder="Input Plain text" required autofocus>
+                        </div>
+                        <div class="mb-3">
+                            <label  class="form-label">
+                                key:
+                            </label>
+                            <input type="number" class="form-control" name="inputKeyText" placeholder="Input KEY text" required autofocus>
+                        </div>
+                        <button type="submit" class="btn btn-primary">ENCRYPT</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold; color:blue">DECRYPTION</td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="/decrypt" method="post">
+                        <div class="mb-3">
+                            <label  class="form-label">
+                                Cypher Text
+                            </label>
+                            <input type="text" class="form-control" name="inputCipherText" placeholder="Input Cipher text" required autofocus>
+                        </div>
+                        <div class="mb-3">
+                            <label  class="form-label">
+                                key:
+                            </label>
+                            <input type="number" class="form-control" name="inputKeyText" placeholder="Input KEY text" required autofocus>
+                        </div>
+                        <button type="submit" class="btn btn-primary">DECRYPT</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
